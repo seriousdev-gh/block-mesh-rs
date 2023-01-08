@@ -99,6 +99,8 @@ pub enum VoxelVisibility {
     Empty,
     /// Should produce geometry, and also light can pass through.
     Translucent,
+    /// Should always produce geometry, independent of other voxels.
+    Always,
     /// Light cannot pass through this voxel.
     Opaque,
 }

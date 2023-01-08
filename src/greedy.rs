@@ -248,6 +248,7 @@ where
     match adjacent_voxel.get_visibility() {
         VoxelVisibility::Empty => true,
         VoxelVisibility::Translucent => voxel.get_visibility() == VoxelVisibility::Opaque,
+        VoxelVisibility::Always => true,
         VoxelVisibility::Opaque => false,
     }
 }
